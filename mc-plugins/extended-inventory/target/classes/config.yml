@@ -1,0 +1,48 @@
+#################################################
+#												#
+#    Plugin made by HyChrod, Version: 1.0.1 	#
+#												#
+#################################################
+
+Prefix: "&6拓展箱 &7|"
+CheckForUpdates: false
+Lang: zh_CN
+Options:
+  # This is the limit of pages, normal players will have
+  SiteLimit: 8
+  # This is the limit of pages, players with special permission have
+  # Permission:
+  # - ExtendedInventory.MorePages
+  PremiumSiteLimit: 8
+  # If this is enabled, the player will drop the items of all inventorys when he dies
+  # If this is disabled, he only drops the items from his current page
+  DropAllPages: true
+  # If this is enabled, all items in all inventorys will be saved after death
+  KeepInventory: true
+
+InventoryItems:
+  NextPage:
+    Name: "&6下一页"
+    ItemID: "FEATHER"
+    # You can split the lines with: "//"!
+    Lore: "进入下一页"
+    InventorySlot: 27
+  PreviousPage:
+    Name: "&6上一页"
+    ItemID: "FEATHER"
+    # You can split the lines with: "//"!
+    Lore: "进入上一页"
+    InventorySlot: 36
+  PlaceholderItems:
+    Name: "%currentPage%当前页数"
+    Lore: "查看当前页"
+    ItemID: "BOOK"
+    InventorySlots:
+      - 18
+
+#################################################
+#												#
+#	You are not authorized to sell this plugin	#
+#	All rights reserved by HyChrod, 2017.		#
+#												#
+#################################################

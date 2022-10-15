@@ -1,0 +1,4 @@
+name: Demo
+version: '${version}'
+main: com.yzqdev.mcplug.tutor.demo.Demo
+api-version: 1.19

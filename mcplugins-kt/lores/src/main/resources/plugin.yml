@@ -1,0 +1,97 @@
+name: Lores
+main: org.lores.Lores
+version: 1.3.1
+api-version: "1.18"
+
+author: Codisimus
+website: www.codisimus.com
+description: Modify Item names and lores
+commands:
+  lore:
+    description: Main command for the plugin
+permissions:
+  lores.lore:
+    default: false
+  lores.name:
+    default: false
+  lores.owner:
+    default: false
+  lores.color.0:
+    default: false
+  lores.color.1:
+    default: false
+  lores.color.2:
+    default: false
+  lores.color.3:
+    default: false
+  lores.color.4:
+    default: false
+  lores.color.5:
+    default: false
+  lores.color.6:
+    default: false
+  lores.color.7:
+    default: false
+  lores.color.8:
+    default: false
+  lores.color.9:
+    default: false
+  lores.color.a:
+    default: false
+  lores.color.b:
+    default: false
+  lores.color.c:
+    default: false
+  lores.color.d:
+    default: false
+  lores.color.e:
+    default: false
+  lores.color.f:
+    default: false
+  lores.color.l:
+    default: false
+  lores.color.n:
+    default: false
+  lores.color.o:
+    default: false
+  lores.color.k:
+    default: false
+  lores.color.m:
+    default: false
+  lores.color.r:
+    default: false
+  lores.color:
+    default: false
+    children:
+      lores.color.0: true
+      lores.color.1: true
+      lores.color.2: true
+      lores.color.3: true
+      lores.color.4: true
+      lores.color.5: true
+      lores.color.6: true
+      lores.color.7: true
+      lores.color.8: true
+      lores.color.9: true
+      lores.color.a: true
+      lores.color.b: true
+      lores.color.c: true
+      lores.color.d: true
+      lores.color.e: true
+      lores.color.f: true
+  lores.format:
+    default: false
+    children:
+      lores.color.l: true
+      lores.color.n: true
+      lores.color.o: true
+      lores.color.k: true
+      lores.color.m: true
+  lores.admin:
+    default: op
+    children:
+      lores.lore: true
+      lores.name: true
+      lores.owner: true
+      lores.color: true
+      lores.format: true

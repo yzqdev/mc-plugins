@@ -1,0 +1,118 @@
+# MobsToEggs - Catch mobs and turn them into eggs!
+# -------------------------------------------
+# LINKS FOR MOBSTOEGGS
+# #
+# Support: https://discord.gg/Xcgn5gC
+# Download: http://mte.sugarfyi.com
+# #
+# -------------------------------------------
+# CONFIG HELP
+#
+# The editing values are at the bottom of the config file!
+# Values with a # in front are comments and are ignored by the plugin!
+#
+# |
+# # The type of projectile to use to capture mobs and the name of it (set name to "" to have no name). Some options include: EGG, ENDER_PEARL, SNOWBALL, SPLASH_POTION, ARROW, TRIDENT, FISHING_HOOK, THROWN_EXP_BOTTLE, SHULKER_BULLET, LLAMA_SPIT, SPECTRAL_ARROW, WITHER_SKULL
+# capsule:
+#   type: EGG
+#   name: "&bThis egg has a name"
+#   lore: # Set this to [] if you do not wish to use item lore
+#   - "&cThis is the first line"
+#   - "&eThis is the second line"
+#   - "&6Colours will work too!"
+# |
+# # Do you want to be notified of a new MobsToEggs version?
+# update-nofity: true
+# |
+# # Set to true for baby mobs to be caught or set false to stop them being caught. (Recommended to set false)
+# catch-baby-mobs: false
+# |
+# # When this is set true, sheared mobs such as sheep can be caught. It is highly recommended to keep this false to avoid players bypassing sheep growing wool.
+# catch-sheared-mobs: false
+# |
+# # Should mobs that have been tamed such as horses, wolves, cats, etc be caught? Set false to disallow and true to allow.
+# catch-tamed-mobs: false
+# |
+# # Should mobs that have a custom name be allowed to be caught (recommended to keep to true if you have mob health displaying plugins like mcmmo)
+# catch-customname-mobs: true
+# |
+# # Should mobs that have a custom name have their custom name removed when caught (recommended to set true if you have mob health displaying plugins like mcmmo)
+# # catch-customname-mobs value above needs to be true for removing custom names to work!
+# remove-custom-name: false
+# |
+# # Should baby chickens spawn from thrown eggs if capsule type is an EGG. It is recommended to set this to false to avoid lots of baby chickens spawning when trying to catch mobs.
+# spawn-baby-chickens: false
+# |
+# # Should mobs only be caught if the player has permission or should all catching permissions be ignored.
+# use-permissions: true
+# |
+# # Set to true to use the global-catch-chance and global-cost value, set to false to use the catch-chance and price per mob in mobs.yml
+# use-global-values: true
+# |
+# # This is the chance the mob will be caught if use-global-values is true, can be between 1 to 100 with 1 being 1% and 100 being a 100% chance of catching.
+# global-catch-chance: 30
+# |
+# # If cost-type is set to ECONOMY, should the egg be returned to the player's inventory if they don't have enough money to catch the mob.
+# refund-egg-on-fail: true
+# |
+# # If allow-spawner-changing is set to true, players will be able to use mob spawn eggs to change the spawner type
+# allow-spawner-changing: true
+# |
+# # Language file to use (Currently supports EN, FR and ES. you can help by heading to discord.sugar.fyi and sending in your translated file)
+# language: EN
+# |
+# # What does it cost to catch a mob (NONE = no cost, ECONOMY = Vault economy with Vault installed, ITEM = use an item for the cost) !! YOU MUST RESTART YOUR SERVER IF YOU HAVE CHANGED THIS VALUE !!
+# cost-type: NONE
+# |
+# # The cost of a mob capture if use-global-values is true and cost-type is set to ECONOMY (Vault needs to be installed for this to work) If you are using cost-type: ITEM, then you need to set ITEMNAME-# where the # is the number of items to take.
+# global-cost: 50
+# |
+# # Here you can define what effects are played when a mob is caught. The 'particle-effect' must be from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html and the 'sound' must be from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html 
+# catch-effects:
+#   particle-effect: EXPLOSION_NORMAL
+#   particle-count: 20 # The number of particles to display
+#   particle-x: 0.5 # The x-offset for particles to spawn 
+#   particle-y: 0.5 # The y-offset for particles to spawn
+#   particle-z: 0.5 # The z-offset for particles to spawn
+#   sound: ITEM_BOTTLE_FILL_DRAGONBREATH
+#   sound-volume: 3 # Volume of the sound (or how far away the sound can be heard)
+#   sound-pitch: 2 # Can be a value of 0.0 to 2.0 (0 is a slow played sound at low pitch -> 2 is a fast played sound at a high pitch)
+# |
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+#
+# Begin editing the config below
+#
+config-version: 1.5.5_5
+capsule:
+  type: EGG
+  name: ""
+  lore: []
+update-notify: true
+catch-baby-mobs: false
+catch-sheared-mobs: false
+catch-tamed-mobs: false
+catch-customname-mobs: true
+remove-custom-name: false
+spawn-baby-chickens: false
+use-permissions: true
+use-global-values: true
+global-catch-chance: 30
+refund-egg-on-fail: true
+allow-spawner-changing: true
+respect-claims: true
+language: EN
+cost-type: NONE
+global-cost: 50
+catch-effects:
+  particle-effect: EXPLOSION_NORMAL
+  particle-count: 20
+  particle-x: 0.5
+  particle-y: 0.5
+  particle-z: 0.5
+  sound: ITEM_BOTTLE_FILL_DRAGONBREATH
+  sound-volume: 3
+  sound-pitch: 2

@@ -1,0 +1,22 @@
+{
+  "motds": [
+    "               &8-&7=&f&k&l!&r &6&l生存(拒绝op) &R&C&K&L!&F&l 服务器 &K!&7 =&8-  \n             &8<&2养老&4丨&3宠物&4丨&a地皮&4丨&1结婚&4丨&6技能&8>"
+  ],
+  "onlineMsgs": [
+    "&2*&6查看服务器信息&2*            &a在线人数: &b%online%&d/&2%maxplayer%"],
+  "players": [
+    "&bRachel制作",
+    "&a现在时间: &e%date% %time%"
+
+  ],
+  "maintenanceModeMotd": "&c服务器维护中, 请等待维护完成...",
+  "maintenanceModeKickMsg": "&c服务器维护中,请等待维护完成再进入服务器!",
+  "tpsFormat": "0.0",
+  "usePlaceHolderAPI": true,
+  "showPing": false,
+  "maintenanceMode": false,
+  "emergencyMode": false,
+  "requestLimit": 15,
+  "ipProvider": "taobao",
+  "limitTime": 600000
+}

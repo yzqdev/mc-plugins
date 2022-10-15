@@ -1,0 +1,4 @@
+name: Tutor
+version: '${version}'
+main: com.yzqdev.mcplug.tutor.Tutor
+api-version: 1.19

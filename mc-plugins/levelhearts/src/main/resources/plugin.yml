@@ -1,0 +1,20 @@
+name: LevelHearts
+version: ${version}
+description: Make your maximum health dynamic! Increase it by gaining levels.
+author: Zettelkasten
+main: com.zettelnet.levelhearts.LevelHeartsPlugin
+website: http://levelhearts.zettelnet.com/
+api-version: '1.17'
+commands:
+  health:
+    description: Displays and changes your current health.
+    usage: /health [help]
+    aliases: hearts
+  maxhealth:
+    description: Displays and changes your maximum health.
+    usage: /maxhealth [help]
+    aliases: [mhealth, maxhearts, mhearts]
+  levelhearts:
+    description: Displays information about LevelHearts.
+    usage: /levelhearts [help]
+    aliases: [lvlhearts, lvlhealth, levelhealth]

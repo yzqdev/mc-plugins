@@ -1,0 +1,21 @@
+# Translated by Elriclespiques.
+# To help translate these messages, please head to discord.sugar.fyi and send in your translated file.
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+prefix: "&7[&bMobsToEggs&7]"
+no-perms: "&cVous n'avez pas la permission de faire ça!"
+no-change-spawner: "&cVous ne pouvez pas changer ce spawner!"
+catch-message: "&eVous avez attrapé %mobname%&e!"
+economy-success: "&a$%money%&a a été déduit de votre argent!"
+economy-fail: "&cVous avez besoin de $%money%&c pour attraper %mobname%&c!"
+try-catch-sheared: "&cVous n'avez pas le droit d'attraper des moutons tondus!"
+try-catch-tamed: "&cVous n'avez pas le droit d'attraper des animaux apprivoisés!"
+try-catch-baby: "&cVous n'avez pas le droit d'attraper des bébés!"
+try-catch-denied: "&cVous n'avez pas le droit d'attraper %mobname%&c!"
+try-catch-custom: "&cVous n'avez pas le droit d'attraper la créature nommée %mobname%&c!"
+given-capsule: "&b%amount% capsules de capture de créatures vous ont été données!"
+try-catch-protected: "&cCette créature est protégée et ne peut pas être attrapée!"

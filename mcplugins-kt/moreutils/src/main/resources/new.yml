@@ -1,0 +1,411 @@
+# 设置该容器的显示标题
+Title: '&9&l生存 &c&l菜单'
+
+# 设置容器的页面排版
+# *(一条字符串代表一行, 最多6行)
+# *(单个符号代表一个按钮)
+Shape:
+  - 'ABCEa#76D'
+  - '12345####'
+  - 'FGHIb#KLM'
+  - 'Ju###NOPQ'
+  - '#########'
+  - 'RS######T'
+  # (可选 | 默认无) 打开此菜单需要满足的条件表达式，需返回 Boolean 值
+Open-Requirement: 'player.hasPermission("trmenu.use")'
+
+# (可选 | 默认无) 若不满足打开此菜单需满足的条件, 则执行以下动作
+Open-Deny-Actions:
+  - 'tell: &7你缺少权限 &ctrmenu.use &7以打开此菜单.'
+
+# (可选 | 默认无) 关闭此菜单需要满足的条件表达式，需返回 Boolean 值
+Close-Requirement: null
+
+# (可选 | 默认无) 若不满足关闭此菜单需满足的条件, 则执行以下动作 (不会阻止关闭菜单, 除非写打开动作)
+Close-Deny-Actions: []
+# 定义开启菜单时的动作 (非必须项)
+Open-Actions:
+  - 'sound: BLOCK_CHEST_OPEN-1-2'
+# 定义关闭菜单时的动作 (非必须项)
+Close-Actions:
+  - 'sound: BLOCK_CHEST_CLOSE-1-2'
+  # 菜单打开命令
+Open-Commands:
+  - 'menut'
+
+# 菜单选项 (非必须项, 不设置则使用默认值)
+Options:
+  # 菜单需要依赖的 PAPI 拓展名称, 若无将自动下载!
+  # 我设计此功能是为了照顾小白服主
+  Depend-Expansions:
+    - 'server'
+    - 'player'
+    - 'progress'
+    - 'math'
+  # 是否在打开 GUI 时禁止玩家操作自己的背包? (默认:true)
+  Lock-Player-Inv: false
+  # 是否传递命令后面的参数? (可用 {N*} 来表示) (默认:false)
+  Transfer-Args: false
+  # 强制传递参数的最小数量 (默认:0)
+  Force-Transfer-Args: 0
+  # 原版材质读取时智能相似度识别最小百分比
+  MATERIAL-SIMILAR-DEGREE: 0.8
+  # 最小的点击延时, 防容器点击事件刷屏 (ms)
+  ANTI-CLICK-SPAM: 200
+  # 是否启用菜单自动重载
+  # * 插件将对已载入的菜单文件监听文件改动
+  # * 并自动重载, 包括刷新已打开的菜单
+  # * 如果有任何错误发生则不通知、重载
+  MENU-FILE-LISTENER:
+    # 是否启用
+    ENABLE: true
+    # 成功的加载是否通知控制台
+    NOTIFY: true
+  # 绑定物品打开 (下方需要需要识别的关键词Lore)
+  Bind-Item-Lore:
+    - '点击打开菜单'
+
+# 定义容器的按钮, 与 Shaple 模板中的字符相对应
+# （可以二次定义动态位置）
+BUTTONS:
+  # 对应 Shape 中的模板排版中的字符
+  '#':
+    # (可选) 更新周期, 不设置则不刷新
+    update: 25
+    # (必须) 图标显示
+    display:
+      mats: GRAY_STAINED_GLASS_PANE
+      name: '&7占位符&7'
+
+    # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+  'A':
+    update: 20
+
+    display:
+      name: '&9&l回主城'
+      mats: beacon
+      lore:
+        - '&e&l>>>&d回主城&e&l<<<'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'close'
+        - 'command:spawn'
+  'B':
+    update: 20
+    display:
+      name: '&9&l传送'
+      mats: minecart
+      lore:
+        - '&e&l>>>&d传送到&e&l<<<'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2','open:tp']
+
+
+  'C':
+    update: 20
+    display:
+      mats: diamond
+      name:
+        - '&3系统商店'
+
+      lore:
+        - '&a&l>>&f&l◆&7&l传送至系统商店&f&l◆&a&l<<'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2','command:warp systemshop']
+
+  'D':
+    update: 20
+    display:
+      mats: compass
+      name:
+        - '&3公共坐标'
+
+      lore:
+        - '&a&l>>&f&l◆&6&l显示公共坐标&f&l◆&a&l<<'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2','command:warp']
+  'E':
+    update: 20
+    display:
+      mats: chest
+      name: '&a&l全球商店&a&l'
+
+      lore:
+        - '&a&l>>&f&l◆&6&l查看全球商店&f&l◆&a&l<<'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['command:bossshop']
+  'F':
+    update: 20
+    display:
+      mats: written_book
+      name: '&b&l✦&7&l快捷商店插件使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>> &7首先，&a放下一个箱子，&7[普通箱子或者陷阱箱都可以]'
+        - '&e&l>>> &7然后拿着你想出售/收购的物品，&a左键点击下箱子'
+        - '&e&l>>> &7OK！屏幕上回出现让你输入价格，打开聊天框，&a输入数字！'
+        - '&e&l>>> &7支持小数，&c注意&7没有/符号哦，就和聊天打字输入一样'
+        - '&e&l>>> &7这时候箱子前面就会出现一个木牌，说明&6创建成功&7了'
+        - '&e&l>>> &7默认是出售商店，想要改成收购，对着这个木牌.'
+        - '&e&l>>> &a输入/qs buy,这个时候，系统会提示：&a商店类型更改为：&d收购&7.'
+        - '&e&l>>> &7记的定期&6取出&7/&6放入&7物品，箱子满了就不工作了~'
+        - '&e&l>>> &7开业~~~~&6/qs&7查看指令帮助！'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+  'G':
+    update: 20
+    display:
+      mats: written_book
+      name: '&b&l✦&7&l领地插件使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>>  &7首先，你要有个[木棍]'
+        - '&e&l>>>  &7然后，在你的家旁边找到最下角，再找到最上角。'
+        - '&e&l>>>  &6左键&7最下角，再&6右键&7最上角'
+        - '&e&l>>>  &7输入&6/res create <领地名字>&7即可创建领地'
+        - '&e&l>>>  &7普通玩家领地价格：0.05/方块，大小：300*300'
+        - '&e&l>>>  &7Tips:领地不支持中文名字！'
+        - '&e&l>>>  &7Tips:输入/res set即可管理你的领地'
+        - '&e&l>>>  &7完成~~~~&6/res help &7查看指令帮助！'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+  'H':
+    update: 20
+    display:
+      mats: written_book
+      name: '&b&l✦ &7&l牌子锁插件使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>>  &7手持木牌，在箱子的侧面直接按右键'
+        - '&e&l>>>  &7支持锁的物品：'
+        - '&e&l>>>  &7箱子，发射器，熔炉，门，漏斗等容器。'
+        - '&e&l>>>  &7然后不用写东西，直接点&6[完成]&7就可以'
+        - '&e&l>>>  &7当你想给你的朋友权限的话'
+        - '&e&l>>>  &7右键已经上锁了的牌子'
+        - '&e&l>>>  &7对着牌子输入&c/lock 玩家名&7这样就可以了~'
+        - '&e&l>>>  &cTips:&7用牌子锁铁门不需要按钮就可以打开哦~'
+        - '&e&l>>>  &7完成~~~~&6/lock&7查看指令帮助！'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+  'I':
+    update: 20
+    display:
+      mats: Written_book
+      name: '&b&l✦&7&l宠物使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>>  &6宠物改名          &a&l>>>   &7/petname [新名字]'
+        - '&e&l>>>  &6释放宠物          &a&l>>>   &7/petrelease [宠物名]'
+        - '&e&l>>>  &6宠物传送至身边    &a&l>>>   &7/petcall'
+        - '&e&l>>>  &6查看更多帮助指令  &a&l>>>   &7/mypet'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+  'J':
+    update: 20
+    display:
+      mats: Written_book
+      name: '&b&l✦&7&l基础指令使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>>  &6回主城            &a&l>>>   &7/spawn'
+        - '&e&l>>>  &6设置家            &a&l>>>   &7/sethome'
+        - '&e&l>>>  &6回家              &a&l>>>   &7/home'
+        - '&e&l>>>  &6请求传送玩家      &a&l>>>   &7/tpa 玩家名'
+        - '&e&l>>>  &6查询金钱          &a&l>>>   &7/money'
+        - '&e&l>>>  &6领地权限设置      &a&l>>>   &7/res set'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+  'K':
+    update: 20
+    display:
+      mats: red_bed
+      name: '&e&l>>>&d设置回家&e&l<<<'
+    actions:
+      all: ['command:sethome','close']
+  'L':
+    update: 20
+    display:
+      mats: lime_bed
+      name: '&e&l>>>&d回家&e&l<<<'
+    actions:
+      all: ['command:home','close']
+  'M':
+    update: 20
+    display:
+      mats: yellow_bed
+      name: '&e&l>>>&d删除家&e&l<<<'
+    actions:
+      all: ['command:delhome','close']
+  'N':
+    update: 20
+    display:
+      mats: redstone_torch
+      name: '&e&l>>>&d回传&e&l<<<'
+    actions:
+      all: ['command:back']
+  'O':
+    update: 20
+    display:
+      mats: redstone_torch
+      name: '&e&l>>>&d接受传送&e&l<<<'
+    actions:
+      all: ['command:tpaccept','close']
+  'P':
+    update: 20
+    display:
+      mats: redstone_torch
+      name: '&e&l>>>&d拒绝传送&e&l<<<'
+    actions:
+      all: ['command:tpdeny','close']
+  'Q':
+    update: 20
+    display:
+      mats: yellow_bed
+      name: '&e&l>>>&d删除家&e&l<<<'
+    actions:
+      all: ['command:delhome','close']
+
+  'R':
+    update: 20
+    display:
+      mats: name_tag
+      name: '&b&l✦&7&l称号管理&b&l✦'
+    actions:
+      all: ['command:tags']
+  'S':
+    update: 20
+    display:
+      mats: end_crystal
+      name: '&b&l✦每日签到&b&l✦'
+    actions:
+      all: ['open:sign']
+  'T':
+    update: 20
+    display:
+      mats: barrier
+      name: '&b&l✦&c关闭菜单&b&l✦'
+    actions:
+      all: ['close']
+  '1':
+    update: 20
+    display:
+      mats: feather
+      name: '&b&l✦&c打开飞行&b&l✦'
+      lore:
+        - '&e&l>>>&d去全球商店购买权限!&e&l<<<'
+    actions:
+      all: ['command:fly']
+  '3':
+    update: 20
+    display:
+      mats: anvil
+      name: '&b&l✦&c打开随身铁砧&b&l✦'
+      lore:
+        - '&e&l>>>&d去全球商店购买权限!&e&l<<<'
+    actions:
+      all: ['command:anvil']
+  '2':
+    update: 20
+    display:
+      mats: crafting_table
+      name: '&b&l✦&c打开随身工作台&b&l✦'
+      lore:
+        - '&e&l>>>&d去全球商店购买权限!&e&l<<<'
+    actions:
+      all: ['command:wb']
+  '4':
+    update: 20
+    display:
+      mats: ender_chest
+      name: '&b&l✦&c打开随身末影箱&b&l✦'
+      lore:
+        - '&e&l>>>&d去全球商店购买权限!&e&l<<<'
+    actions:
+      all: ['command:ec']
+  '5':
+    update: 20
+    display:
+      mats: diamond_pickaxe
+      name: '&e&l>>>&d超级稿子&e&l<<<'
+      lore:
+        - '&e&l>>>&d合成超级稿子,四合一工具!&e&l<<<'
+    actions:
+      all: ['command:multitool open']
+  '6':
+    update: 20
+    display:
+      mats: jungle_planks
+      name: '&b&l✦&c随机传送&b&l✦'
+      lore:
+        - '&e&l>>>&d只能在资源世界传送!&e&l<<<'
+    actions:
+      all: ['command:rtp']
+  '7':
+    update: 20
+    display:
+      mats: pufferfish
+      name: '&b&l✦&c宠物系统&b&l✦'
+      lore:
+        - '&e&l>>>&d点击打开宠物系统!&e&l<<<'
+    actions:
+      all: ['open:pet']
+  'a':
+    update: 20
+    display:
+      mats: green_wool
+      name: '&b&l✦&c去迷宫&b&l✦'
+      lore:
+        - '&e&l>>>&d点击进入迷宫!&e&l<<<'
+    actions:
+      all: ['command:warp maze']
+  'u':
+    update: 20
+    display:
+      mats: written_book
+      name: '&b&l✦&7&l快捷方式使用帮助&b&l✦'
+      lore:
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+        - '&e&l>>> &7首先，&a放下一个箱子，&7[普通箱子或者陷阱箱都可以]'
+        - '&e&l>>> &7然后拿着你想出售/收购的物品，&a左键点击下箱子'
+        - '&e&l>>> &7OK！屏幕上回出现让你输入价格，打开聊天框，&a输入数字！'
+        - '&e&l>>> &7支持小数，&c注意&7没有/符号哦，就和聊天打字输入一样'
+        - '&e&l>>> &7这时候箱子前面就会出现一个木牌，说明&6创建成功&7了'
+        - '&e&l>>> &7默认是出售商店，想要改成收购，对着这个木牌.'
+        - '&e&l>>> &a输入/qs buy,这个时候，系统会提示：&a商店类型更改为：&d收购&7.'
+        - '&e&l>>> &7记的定期&6取出&7/&6放入&7物品，箱子满了就不工作了~'
+        - '&e&l>>> &7开业~~~~&6/qs&7查看指令帮助！'
+        - '&e&l&m 一一一一一一一一一一一一一一一一一一一一一一一一'
+      # 点击动作
+    actions:
+      # 类型 - [动作]
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+  'b':
+    update: 20
+    display:
+      mats: chest
+      name: '&b&l✦&c打开随身箱子&b&l✦'
+      lore:
+        - '&e&l>>>&d打开随身箱子!&e&l<<<'
+    actions:
+      all: ['command:backpack']

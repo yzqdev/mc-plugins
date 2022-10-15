@@ -1,0 +1,21 @@
+name: colormotd
+version: ${project.version}
+main: org.colormotd.ColorMotd
+api-version: '1.17'
+authors: [Ghost_chu, andylizi, Bukkit Commands,yzq]
+prefix: ColorMOTD
+load: STARTUP
+depend: [ProtocolLib]
+softdepend: [PlaceholderAPI]
+commands:
+#    smode:
+#        description: Toggle smode
+#    emode:
+#        description: Toggle emode
+    colormotd:
+        description: Main command
+permissions:
+    colormotd.admin:
+        default: op
+    colormotd.maintenance.join:
+        default: op

@@ -1,0 +1,353 @@
+# Here you can change each individual mob setting.
+# #
+# MOBNAME:
+#   enabled: true/false (set to false to disabled catching of this mob, or set true to allow catching)
+#   price: 0.0 (if cost-type in the main config.yml is set to ECONOMY you can define the cost of catching the mob)
+#   catch-chance: 0 (this is the chance the mob will be caught, can be between 1 to 100 with 1 being 1% and 100 being a 100% chance of catching)
+#   change-spawner: true/false (set to false to disable this mob type changing a spawner when the spawner is right clicked with the spawn egg)
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+EVOKER:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+VEX:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+VINDICATOR:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+MAGMA CUBE:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+CAVE SPIDER:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+PIG ZOMBIE:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+MUSHROOM COW:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+CREEPER:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+WITHER SKELETON:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+STRAY:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+SKELETON:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+SPIDER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+HUSK:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ZOMBIE VILLAGER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ZOMBIE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SLIME:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+GHAST:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ENDERMAN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SILVERFISH:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+BLAZE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PIG:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SHEEP:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+COW:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+CHICKEN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SQUID:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+WOLF:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+VILLAGER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+OCELOT:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+BAT:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+WITCH:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ZOMBIE HORSE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SKELETON HORSE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+LLAMA:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+DONKEY:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+MULE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+HORSE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ENDERMITE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ELDER GUARDIAN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+GUARDIAN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+RABBIT:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+POLAR BEAR:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SHULKER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PARROT:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+SALMON:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+TROPICAL FISH:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PUFFERFISH:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+TURTLE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+DOLPHIN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PHANTOM:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+COD:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+DROWNED:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PILLAGER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+FOX:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+PANDA:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+CAT:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+BEE:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+RAVAGER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+WANDERING TRADER:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+TRADER LLAMA:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ZOGLIN:
+   enabled: true
+   price: 50
+   catch-chance: 30
+   change-spawner: true
+ZOMBIFIED PIGLIN:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+STRIDER:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+HOGLIN:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+PIGLIN:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+PIGLIN_BRUTE:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+GOAT:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+GLOW SQUID:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true
+AXOLOTL:
+  enabled: true
+  price: 50
+  catch-chance: 30
+  change-spawner: true

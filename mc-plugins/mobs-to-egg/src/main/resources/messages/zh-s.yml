@@ -1,0 +1,20 @@
+# Translated by Police1082.
+# To help translate these messages, please head to discord.sugar.fyi and send in your translated file.
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+prefix: "&7[&b捕捉系统&7]"
+no-perms: "&c你没有权限这样做!"
+no-change-spawner: "&c你没有权限更改刷怪笼!"
+catch-message: "&e你捕捉了一个 %mobname%&e!"
+economy-success: "&a$%money%&a 已从你的账户中扣除!"
+economy-fail: "&c你需要 $%money%&c 才能捕捉 %mobname%&c!"
+try-catch-sheared: "&cY你不能捕捉被剪羊毛的羊!"
+try-catch-tamed: "&c你不能捕捉被驯服的生物!"
+try-catch-baby: "&c你不能捕捉幼年生物!"
+try-catch-denied: "&c你不能捕捉 %mobname%s!"
+try-catch-custom: "&c你不能捕捉 %mobname% &c!"
+given-capsule: "&b你已被给予%amount%颗生物捕捉球!"

@@ -1,0 +1,11 @@
+name: moreutils
+main: org.moreutils.MoreUtils
+version: 1.0
+api-version: 1.17
+commands:
+  hp:
+    description: show hp
+  mu:
+    description: moreutils basicuse
+  toegg:
+    description: open amazing egg

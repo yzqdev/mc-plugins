@@ -1,0 +1,6 @@
+# Here you can change all the messages to your wishes!
+Messages:
+  AlreadyOnFirstPage: "%PREFIX% &c你已经在第一页了!"
+  NoMorePages: "%PREFIX% &c没有更多了!"
+  SwitchPage: "%PREFIX% &a你在第&3%PAGE%页"
+  hasEnabled: "已经启动!"

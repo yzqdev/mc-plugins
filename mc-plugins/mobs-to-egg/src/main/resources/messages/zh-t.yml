@@ -1,0 +1,21 @@
+# 被某某人翻譯貓咪
+# To help translate these messages, please head to discord.sugar.fyi and send in your translated file.
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+prefix: "&7[&b捕捉系統&7]"
+no-perms: "&c你沒有權限這樣做!"
+no-change-spawner: "&c你沒有權限更改生怪磚!"
+catch-message: "&e你抓到了%mobname%&e!"
+economy-success: "&a$%money%&a元已從你的帳戶中扣除!"
+economy-fail: "&c你需要$%money%&c才能捕捉%mobname%&c!"
+try-catch-sheared: "&c你不能捕捉一隻被剪羊毛的羊!"
+try-catch-tamed: "&c你不能捕捉一隻被馴服的生物!"
+try-catch-baby: "&c你不能捕捉一隻幼年生物!"
+try-catch-denied: "&c你不能捕捉%mobname%s!"
+try-catch-custom: "&c你不能捕捉這隻命名怪物&c!"
+given-capsule: "&b你已被給予%amount%顆捕捉膠囊!"
+try-catch-protected: "&c此生物被設定為無法捕捉!"

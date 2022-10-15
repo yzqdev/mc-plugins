@@ -1,0 +1,7 @@
+name: ExtendedInventory
+version: 1.0.1
+api-version: "1.17"
+main: yzq.ExtendedInventory.ExtendedInventory
+commands:
+  ei:
+    description: basic command

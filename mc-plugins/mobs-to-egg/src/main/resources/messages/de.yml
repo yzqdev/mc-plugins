@@ -1,0 +1,21 @@
+# Translated by AtusHosting.de
+# To help translate these messages, please head to discord.sugar.fyi and send in your translated file.
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+prefix: '&7[&bMobsToEggs&7]'
+no-perms: '&cDu hast keine Rechte dazu!'
+no-change-spawner: '&cDu kannst diesen Spawner nicht ändern!'
+catch-message: '&eDu hast %mobname% &eerwischt!'
+economy-success: '&a$%money%&a wurde von Ihrem Konto abgebucht!'
+economy-fail: '&cDu brauchst $% money% &c, um %mobname%&c zu fangen!'
+try-catch-sheared: '&cDu kannst keine geschorenen Schafe fangen!'
+try-catch-tamed: '&cDu kannst keine gezähmten Mobs fangen!'
+try-catch-baby: '&cDu kannst Baby Mobs nicht fangen!'
+try-catch-denied: '&cDu kannst nicht %mobname%s &cfangen!'
+try-catch-custom: '&cDu kannst kein benanntes Mob fangen %mobname%&c!'
+try-catch-protected: '&cDieser Mob ist geschützt und kann nicht gefangen werden!'
+given-capsule: '&bSie erhielten %amount% Mob-Capture-Kapseln!'

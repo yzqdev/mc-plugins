@@ -1,0 +1,10 @@
+name: HealthBar
+author: filoghost
+main: org.health.Main
+version: 1.8.2
+api-version: '1.17'
+commands:
+   healthbar:
+      description: Main command for HealthBar, use /hbr help for commands.
+      usage: /<command>
+      aliases: [hbr,hbar]

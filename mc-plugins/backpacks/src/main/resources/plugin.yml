@@ -1,0 +1,14 @@
+name: Backpack
+version: 2.5.11
+author: michaelkrauty
+main: me.michaelkrauty.Backpack.Main
+softdepend: [Vault]
+commands:
+  backpack:
+    description: the backpack command
+    usage: /backpack <give|rename> [name]
+permissions:
+  backpack.use:
+    description: Gives access to /backpack
+  backpack.nocooldown:
+    description: Disables spawning cooldown

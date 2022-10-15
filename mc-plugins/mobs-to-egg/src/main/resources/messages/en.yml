@@ -1,0 +1,20 @@
+# To help translate these messages, please head to discord.sugar.fyi and send in your translated file.
+# -------------------------------------------
+# |
+# DO NOT EDIT THE 'config-version' OPTION!
+# |
+# -------------------------------------------
+config-version: 1.5.5_5
+prefix: "&7[&bMobsToEggs&7]"
+no-perms: "&cYou don't have permission to do this!"
+no-change-spawner: "&cYou can't change this spawner!"
+catch-message: "&eYou caught the %mobname%&e!"
+economy-success: "&a$%money%&a has been taken from your account!"
+economy-fail: "&cYou need $%money%&c to catch the %mobname%&c!"
+try-catch-sheared: "&cYou can't catch sheared sheep!"
+try-catch-tamed: "&cYou can't catch tamed mobs!"
+try-catch-baby: "&cYou can't catch baby mobs!"
+try-catch-denied: "&cYou can't catch %mobname%s!"
+try-catch-custom: "&cYou can't catch the mob named %mobname%&c!"
+given-capsule: "&bYou were given %amount% mob capture capsules!"
+try-catch-protected: "&cThis mob is protected and can't be caught!"

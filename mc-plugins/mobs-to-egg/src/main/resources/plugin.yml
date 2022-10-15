@@ -1,0 +1,446 @@
+main: fyi.sugar.mobstoeggs.Main
+name: MobsToEggs
+version: '1.5.5_5'
+author: Sugarfyi
+description: Throw capsules at mobs for a chance to catch them.
+api-version: 1.17
+softdepend: [Vault]
+commands:
+  mte:
+    description: Mobs To Eggs main command
+    usage: /mte <help|reload|info>
+    permission-message: You don't have permission.
+    aliases: [mobstoeggs, mobeggs, m2e, eggs]
+permissions:
+  mobstoeggs.catch.evolker:
+    description: Catch this mob type
+  mobstoeggs.catch.vex:
+    description: Catch this mob type
+  mobstoeggs.catch.vindicator:
+    description: Catch this mob type
+  mobstoeggs.catch.pig_zombie:
+    description: Catch this mob type
+  mobstoeggs.catch.magma_cube:
+    description: Catch this mob type
+  mobstoeggs.catch.cave_spider:
+    description: Catch this mob type
+  mobstoeggs.catch.mushroom_cow:
+    description: Catch this mob type
+  mobstoeggs.catch.creeper:
+    description: Catch this mob type
+  mobstoeggs.catch.wither_skeleton:
+    description: Catch this mob type
+  mobstoeggs.catch.stray:
+    description: Catch this mob type
+  mobstoeggs.catch.skeleton:
+    description: Catch this mob type
+  mobstoeggs.catch.spider:
+    description: Catch this mob type
+  mobstoeggs.catch.husk:
+    description: Catch this mob type
+  mobstoeggs.catch.zombie_villager:
+    description: Catch this mob type
+  mobstoeggs.catch.zombie:
+    description: Catch this mob type
+  mobstoeggs.catch.slime:
+    description: Catch this mob type
+  mobstoeggs.catch.ghast:
+    description: Catch this mob type
+  mobstoeggs.catch.enderman:
+    description: Catch this mob type
+  mobstoeggs.catch.silverfish:
+    description: Catch this mob type
+  mobstoeggs.catch.blaze:
+    description: Catch this mob type
+  mobstoeggs.catch.pig:
+    description: Catch this mob type
+  mobstoeggs.catch.sheep:
+    description: Catch this mob type
+  mobstoeggs.catch.cow:
+    description: Catch this mob type
+  mobstoeggs.catch.chicken:
+    description: Catch this mob type
+  mobstoeggs.catch.squid:
+    description: Catch this mob type
+  mobstoeggs.catch.wolf:
+    description: Catch this mob type
+  mobstoeggs.catch.villager:
+    description: Catch this mob type
+  mobstoeggs.catch.ocelot:
+    description: Catch this mob type
+  mobstoeggs.catch.bat:
+    description: Catch this mob type
+  mobstoeggs.catch.witch:
+    description: Catch this mob type
+  mobstoeggs.catch.zombie_horse:
+    description: Catch this mob type
+  mobstoeggs.catch.skeleton_horse:
+    description: Catch this mob type
+  mobstoeggs.catch.llama:
+    description: Catch this mob type
+  mobstoeggs.catch.donkey:
+    description: Catch this mob type
+  mobstoeggs.catch.mule:
+    description: Catch this mob type
+  mobstoeggs.catch.horse:
+    description: Catch this mob type
+  mobstoeggs.catch.endermite:
+    description: Catch this mob type
+  mobstoeggs.catch.elder_guardian:
+    description: Catch this mob type
+  mobstoeggs.catch.guardian:
+    description: Catch this mob type
+  mobstoeggs.catch.rabbit:
+    description: Catch this mob type
+  mobstoeggs.catch.polar_bear:
+    description: Catch this mob type
+  mobstoeggs.catch.shulker:
+    description: Catch this mob type
+  mobstoeggs.catch.parrot:
+    description: Catch this mob type
+  mobstoeggs.catch.slamon:
+    description: Catch this mob type
+  mobstoeggs.catch.tropical_fish:
+    description: Catch this mob type
+  mobstoeggs.catch.pufferfish:
+    description: Catch this mob type
+  mobstoeggs.catch.turtle:
+    description: Catch this mob type
+  mobstoeggs.catch.dolphin:
+    description: Catch this mob type
+  mobstoeggs.catch.phantom:
+    description: Catch this mob type
+  mobstoeggs.catch.cod:
+    description: Catch this mob type
+  mobstoeggs.catch.drowned:
+    description: Catch this mob type
+  mobstoeggs.catch.pillager:
+    description: Catch this mob type
+  mobstoeggs.catch.fox:
+    description: Catch this mob type
+  mobstoeggs.catch.panda:
+    description: Catch this mob type
+  mobstoeggs.catch.bee:
+    description: Catch this mob type
+  mobstoeggs.catch.cat:
+    description: Catch this mob type
+  mobstoeggs.catch.ravager:
+    description: Catch this mob type
+  mobstoeggs.catch.wandering_trader:
+    description: Catch this mob type
+  mobstoeggs.catch.trader_llama:
+    description: Catch this mob type
+  mobstoeggs.catch.hoglin:
+    description: Catch this mob type
+  mobstoeggs.catch.piglin:
+    description: Catch this mob type
+  mobstoeggs.catch.piglin_brute:
+    description: Catch this mob type
+  mobstoeggs.catch.strider:
+    description: Catch this mob type
+  mobstoeggs.catch.zoglin:
+    description: Catch this mob type
+  mobstoeggs.catch.zombified_piglin:
+    description: Catch this mob type
+  mobstoeggs.catch.goat:
+    description: Catch this mob type
+  mobstoeggs.catch.glow_squid:
+    description: Catch this mob type
+  mobstoeggs.catch.axolotl:
+    description: Catch this mob type
+  mobstoeggs.catch.*:
+    description: Grant access to catch all mob types
+    default: op
+    children:
+      mobstoeggs.catch.evolker: true
+      mobstoeggs.catch.vex: true
+      mobstoeggs.catch.vindicator: true
+      mobstoeggs.catch.pig_zombie: true
+      mobstoeggs.catch.magma_cube: true
+      mobstoeggs.catch.cave_spider: true
+      mobstoeggs.catch.mushroom_cow: true
+      mobstoeggs.catch.creeper: true
+      mobstoeggs.catch.wither_skeleton: true
+      mobstoeggs.catch.stray: true
+      mobstoeggs.catch.skeleton: true
+      mobstoeggs.catch.spider: true
+      mobstoeggs.catch.husk: true
+      mobstoeggs.catch.zombie_villager: true
+      mobstoeggs.catch.zombie: true
+      mobstoeggs.catch.slime: true
+      mobstoeggs.catch.ghast: true
+      mobstoeggs.catch.enderman: true
+      mobstoeggs.catch.silverfish: true
+      mobstoeggs.catch.blaze: true
+      mobstoeggs.catch.pig: true
+      mobstoeggs.catch.sheep: true
+      mobstoeggs.catch.cow: true
+      mobstoeggs.catch.chicken: true
+      mobstoeggs.catch.squid: true
+      mobstoeggs.catch.wolf: true
+      mobstoeggs.catch.villager: true
+      mobstoeggs.catch.ocelot: true
+      mobstoeggs.catch.bat: true
+      mobstoeggs.catch.witch: true
+      mobstoeggs.catch.zombie_horse: true
+      mobstoeggs.catch.skeleton_horse: true
+      mobstoeggs.catch.llama: true
+      mobstoeggs.catch.donkey: true
+      mobstoeggs.catch.mule: true
+      mobstoeggs.catch.horse: true
+      mobstoeggs.catch.endermite: true
+      mobstoeggs.catch.elder_guardian: true
+      mobstoeggs.catch.guardian: true
+      mobstoeggs.catch.rabbit: true
+      mobstoeggs.catch.polar_bear: true
+      mobstoeggs.catch.shulker: true
+      mobstoeggs.catch.parrot: true
+      mobstoeggs.catch.salmon: true
+      mobstoeggs.catch.tropical_fish: true
+      mobstoeggs.catch.pufferfish: true
+      mobstoeggs.catch.turtle: true
+      mobstoeggs.catch.dolphin: true
+      mobstoeggs.catch.phantom: true
+      mobstoeggs.catch.cod: true
+      mobstoeggs.catch.drowned: true
+      mobstoeggs.catch.pillager: true
+      mobstoeggs.catch.fox: true
+      mobstoeggs.catch.panda: true
+      mobstoeggs.catch.cat: true
+      mobstoeggs.catch.ravager: true
+      mobstoeggs.catch.wandering_trader: true
+      mobstoeggs.catch.trader_llama: true
+      mobstoeggs.catch.bee: true
+      mobstoeggs.catch.hoglin: true
+      mobstoeggs.catch.piglin: true
+      mobstoeggs.catch.piglin_brute: true
+      mobstoeggs.catch.strider: true
+      mobstoeggs.catch.zoglin: true
+      mobstoeggs.catch.zombified_piglin: true
+      mobstoeggs.catch.goat: true
+      mobstoeggs.catch.glow_squid: true
+      mobstoeggs.catch.axolotl: true
+  mobstoeggs.spawner.evolker:
+    description: spawner this mob type
+  mobstoeggs.spawner.vex:
+    description: spawner this mob type
+  mobstoeggs.spawner.vindicator:
+    description: spawner this mob type
+  mobstoeggs.spawner.pig_zombie:
+    description: spawner this mob type
+  mobstoeggs.spawner.magma_cube:
+    description: spawner this mob type
+  mobstoeggs.spawner.cave_spider:
+    description: spawner this mob type
+  mobstoeggs.spawner.mushroom_cow:
+    description: spawner this mob type
+  mobstoeggs.spawner.creeper:
+    description: spawner this mob type
+  mobstoeggs.spawner.wither_skeleton:
+    description: spawner this mob type
+  mobstoeggs.spawner.stray:
+    description: spawner this mob type
+  mobstoeggs.spawner.skeleton:
+    description: spawner this mob type
+  mobstoeggs.spawner.spider:
+    description: spawner this mob type
+  mobstoeggs.spawner.husk:
+    description: spawner this mob type
+  mobstoeggs.spawner.zombie_villager:
+    description: spawner this mob type
+  mobstoeggs.spawner.zombie:
+    description: spawner this mob type
+  mobstoeggs.spawner.slime:
+    description: spawner this mob type
+  mobstoeggs.spawner.ghast:
+    description: spawner this mob type
+  mobstoeggs.spawner.enderman:
+    description: spawner this mob type
+  mobstoeggs.spawner.silverfish:
+    description: spawner this mob type
+  mobstoeggs.spawner.blaze:
+    description: spawner this mob type
+  mobstoeggs.spawner.pig:
+    description: spawner this mob type
+  mobstoeggs.spawner.sheep:
+    description: spawner this mob type
+  mobstoeggs.spawner.cow:
+    description: spawner this mob type
+  mobstoeggs.spawner.chicken:
+    description: spawner this mob type
+  mobstoeggs.spawner.squid:
+    description: spawner this mob type
+  mobstoeggs.spawner.wolf:
+    description: spawner this mob type
+  mobstoeggs.spawner.villager:
+    description: spawner this mob type
+  mobstoeggs.spawner.ocelot:
+    description: spawner this mob type
+  mobstoeggs.spawner.bat:
+    description: spawner this mob type
+  mobstoeggs.spawner.witch:
+    description: spawner this mob type
+  mobstoeggs.spawner.zombie_horse:
+    description: spawner this mob type
+  mobstoeggs.spawner.skeleton_horse:
+    description: spawner this mob type
+  mobstoeggs.spawner.llama:
+    description: spawner this mob type
+  mobstoeggs.spawner.donkey:
+    description: spawner this mob type
+  mobstoeggs.spawner.mule:
+    description: spawner this mob type
+  mobstoeggs.spawner.horse:
+    description: spawner this mob type
+  mobstoeggs.spawner.endermite:
+    description: spawner this mob type
+  mobstoeggs.spawner.elder_guardian:
+    description: spawner this mob type
+  mobstoeggs.spawner.guardian:
+    description: spawner this mob type
+  mobstoeggs.spawner.rabbit:
+    description: spawner this mob type
+  mobstoeggs.spawner.polar_bear:
+    description: spawner this mob type
+  mobstoeggs.spawner.shulker:
+    description: spawner this mob type
+  mobstoeggs.spawner.parrot:
+    description: spawner this mob type
+  mobstoeggs.spawner.slamon:
+    description: spawner this mob type
+  mobstoeggs.spawner.tropical_fish:
+    description: spawner this mob type
+  mobstoeggs.spawner.pufferfish:
+    description: spawner this mob type
+  mobstoeggs.spawner.turtle:
+    description: spawner this mob type
+  mobstoeggs.spawner.dolphin:
+    description: spawner this mob type
+  mobstoeggs.spawner.phantom:
+    description: spawner this mob type
+  mobstoeggs.spawner.cod:
+    description: spawner this mob type
+  mobstoeggs.spawner.drowned:
+    description: spawner this mob type
+  mobstoeggs.spawner.pillager:
+    description: spawner this mob type
+  mobstoeggs.spawner.fox:
+    description: spawner this mob type
+  mobstoeggs.spawner.panda:
+    description: spawner this mob type
+  mobstoeggs.spawner.bee:
+    description: spawner this mob type
+  mobstoeggs.spawner.cat:
+    description: spawner this mob type
+  mobstoeggs.spawner.ravager:
+    description: spawner this mob type
+  mobstoeggs.spawner.wandering_trader:
+    description: spawner this mob type
+  mobstoeggs.spawner.trader_llama:
+    description: spawner this mob type
+  mobstoeggs.spawner.hoglin:
+    description: spawner this mob type
+  mobstoeggs.spawner.piglin:
+    description: spawner this mob type
+  mobstoeggs.spawner.piglin_brute:
+    description: spawner this mob type
+  mobstoeggs.spawner.strider:
+    description: spawner this mob type
+  mobstoeggs.spawner.zoglin:
+    description: spawner this mob type
+  mobstoeggs.spawner.zombified_piglin:
+    description: spawner this mob type
+  mobstoeggs.spawner.goat:
+    description: Catch this mob type
+  mobstoeggs.spawner.glow_squid:
+    description: Catch this mob type
+  mobstoeggs.spawner.axolotl:
+    description: Catch this mob type
+  mobstoeggs.spawner.*:
+    description: Grant access to spawner all mob types
+    default: op
+    children:
+      mobstoeggs.spawner.evolker: true
+      mobstoeggs.spawner.vex: true
+      mobstoeggs.spawner.vindicator: true
+      mobstoeggs.spawner.pig_zombie: true
+      mobstoeggs.spawner.magma_cube: true
+      mobstoeggs.spawner.cave_spider: true
+      mobstoeggs.spawner.mushroom_cow: true
+      mobstoeggs.spawner.creeper: true
+      mobstoeggs.spawner.wither_skeleton: true
+      mobstoeggs.spawner.stray: true
+      mobstoeggs.spawner.skeleton: true
+      mobstoeggs.spawner.spider: true
+      mobstoeggs.spawner.husk: true
+      mobstoeggs.spawner.zombie_villager: true
+      mobstoeggs.spawner.zombie: true
+      mobstoeggs.spawner.slime: true
+      mobstoeggs.spawner.ghast: true
+      mobstoeggs.spawner.enderman: true
+      mobstoeggs.spawner.silverfish: true
+      mobstoeggs.spawner.blaze: true
+      mobstoeggs.spawner.pig: true
+      mobstoeggs.spawner.sheep: true
+      mobstoeggs.spawner.cow: true
+      mobstoeggs.spawner.chicken: true
+      mobstoeggs.spawner.squid: true
+      mobstoeggs.spawner.wolf: true
+      mobstoeggs.spawner.villager: true
+      mobstoeggs.spawner.ocelot: true
+      mobstoeggs.spawner.bat: true
+      mobstoeggs.spawner.witch: true
+      mobstoeggs.spawner.zombie_horse: true
+      mobstoeggs.spawner.skeleton_horse: true
+      mobstoeggs.spawner.llama: true
+      mobstoeggs.spawner.donkey: true
+      mobstoeggs.spawner.mule: true
+      mobstoeggs.spawner.horse: true
+      mobstoeggs.spawner.endermite: true
+      mobstoeggs.spawner.elder_guardian: true
+      mobstoeggs.spawner.guardian: true
+      mobstoeggs.spawner.rabbit: true
+      mobstoeggs.spawner.polar_bear: true
+      mobstoeggs.spawner.shulker: true
+      mobstoeggs.spawner.parrot: true
+      mobstoeggs.spawner.salmon: true
+      mobstoeggs.spawner.tropical_fish: true
+      mobstoeggs.spawner.pufferfish: true
+      mobstoeggs.spawner.turtle: true
+      mobstoeggs.spawner.dolphin: true
+      mobstoeggs.spawner.phantom: true
+      mobstoeggs.spawner.cod: true
+      mobstoeggs.spawner.drowned: true
+      mobstoeggs.spawner.pillager: true
+      mobstoeggs.spawner.fox: true
+      mobstoeggs.spawner.panda: true
+      mobstoeggs.spawner.cat: true
+      mobstoeggs.spawner.ravager: true
+      mobstoeggs.spawner.wandering_trader: true
+      mobstoeggs.spawner.trader_llama: true
+      mobstoeggs.spawner.bee: true
+      mobstoeggs.spawner.hoglin: true
+      mobstoeggs.spawner.piglin: true
+      mobstoeggs.spawner.piglin_brute: true
+      mobstoeggs.spawner.strider: true
+      mobstoeggs.spawner.zoglin: true
+      mobstoeggs.spawner.zombified_piglin: true
+      mobstoeggs.spawner.goat: true
+      mobstoeggs.spawner.glow_squid: true
+      mobstoeggs.spawner.axolotl: true
+  mobstoeggs.spawners:
+    description: Allow spawner changing
+    default: op
+    children:
+      mobstoeggs.spawner.*: true
+  mobstoeggs.give:
+    description: Allows to use the mte /give command
+    default: op
+  mobstoeggs.*:
+    description: Grant access to all Mobs To Eggs permissions
+    default: op
+    children:
+      mobstoeggs.spawners: true
+      mobstoeggs.spawner.*: true
+      mobstoeggs.catch.*: true
+      mobstoeggs.give: true

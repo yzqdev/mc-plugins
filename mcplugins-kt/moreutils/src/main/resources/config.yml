@@ -1,0 +1,7 @@
+player-max-health: 40
+trash:
+  block: '118:0'
+  blacklist-item:
+    - '326:0'
+    - '374:0'
+  message: "&aThe item in your hand has been dropped"
